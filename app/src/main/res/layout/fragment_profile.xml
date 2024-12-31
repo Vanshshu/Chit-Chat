@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:background="#3FB541"
+         android:gravity="center_vertical"
+         android:padding="10dp"
+         android:id="@+id/layout_4">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:id="@+id/img_pback"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif"></TextView>
+     </LinearLayout>
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/img_profile"
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          android:layout_below="@+id/layout_4"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="25dp"
+          android:src="@drawable/profile"
+          app:civ_border_color="#FFFFFF"
+          app:civ_border_width="0sp">
+
+      </de.hdodenhof.circleimageview.CircleImageView>
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/baseline_camera_alt_24"
+android:layout_below="@+id/img_profile"
+          android:layout_toRightOf="@+id/img_profile"
+          android:layout_marginTop="-50dp"
+          android:layout_marginLeft="-35dp"
+          android:id="@+id/img_changeprofile">
+
+      </ImageView>
+
+      <TextView
+          android:id="@+id/txt_pname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/img_profile"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="10dp"
+          android:text="VANSH SHUKLA"
+          android:textColor="@color/grey"
+          android:textSize="25dp"
+          android:textStyle="bold"></TextView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_info_24"
+    android:layout_below="@+id/txt_pname"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/icon_info"
+    ></ImageView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ABOUT"
+          android:textColor="@color/grey"
+          android:layout_toRightOf="@+id/icon_info"
+          android:layout_below="@+id/txt_pname"
+
+          android:textSize="14sp"
+          android:id="@+id/txt_pabouttext"></TextView>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Busy right now,not receiving"
+          android:textSize="16dp"
+          android:layout_below="@+id/txt_pabouttext"
+          android:layout_toRightOf="@+id/icon_info"
+          android:layout_marginLeft="15dp"
+          android:textColor="@color/black"
+          android:layout_marginTop="5dp"
+          android:id="@+id/txt_pabout"></TextView>
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/img_changeabout"
+          android:src="@drawable/baseline_edit_24"
+          android:layout_alignParentRight="true"
+          android:layout_marginEnd="25dp"
+          android:layout_below="@+id/txt_pabouttext"
+           ></ImageView>
+  </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Personal Info"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        android:fontFamily="serif-monospace"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="5dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vansh shukla "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_weight="4"
+            android:id="@+id/txt_pname2"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shuklavansh03@gmail.com "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_weight="4"
+            android:id="@+id/txt_pemail"
+            ></TextView>
+    </LinearLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Logout"
+    android:layout_gravity="end"
+    android:layout_marginRight="30dp"
+    android:id="@+id/btn_logout1"></Button>
+
+</LinearLayout>
+
+
